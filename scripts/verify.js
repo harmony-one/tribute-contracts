@@ -22,7 +22,7 @@ const skipContracts = [
 
 const args = process.argv.slice(2);
 if (!args || args.length === 0)
-  throw Error("Missing one of the network names: [rinkeby, ropsten, mainnet]");
+  throw Error("Missing one of the network names: [rinkeby, ropsten, mainnet, harmonyTestnet]");
 
 const network = args[0] || "rinkeby";
 console.log(`Selected Network: ${network}`);

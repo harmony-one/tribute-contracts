@@ -742,6 +742,10 @@ const networks = [
     chainId: 4,
   },
   {
+    name: "harmonyTest",
+    chainId: 1666700000,
+  },
+  {
     name: "test",
     chainId: 1,
   },

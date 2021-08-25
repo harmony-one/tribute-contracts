@@ -53,6 +53,7 @@
     "deploy:ganache": "truffle deploy --network ganache --reset 2>&1 | tee logs/ganache-deploy.log",
     "deploy:rinkeby": "truffle deploy --network rinkeby --reset 2>&1 | tee logs/rinkeby-deploy.log",
     "deploy:mainnet": "truffle deploy --network mainnet --reset 2>&1 | tee logs/mainnet-deploy.log",
+    "deploy:harmonyTestnet": "truffle deploy --network harmonyTestnet --reset 2>&1 | tee logs/harmony-testnet-deploy.log",
     "ganache": "ganache-cli --deterministic -p 7545 --networkId 1337",
     "lint": "prettier --list-different 'contracts/**/*.sol' '**/*.js' '**/*.md'",
     "lint:fix": "prettier --write 'contracts/**/*.sol' '**/*.js' '**/*.md'",

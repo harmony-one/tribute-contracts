@@ -40,6 +40,17 @@ module.exports = {
       gasPrice: 10000000000,
       skipDryRun: true,
     },
+    harmonyTestnet: {
+      provider: function () {
+        let HDWalletProvider = require("@truffle/hdwallet-provider");
+        let mnemonic = process.env.TRUFFLE_MNEMONIC;
+        let apiUrl = "wss://ws.s0.b.hmny.io";
+        return new HDWalletProvider(mnemonic, apiUrl);
+      },
+      network_id: 1666700000,
+      gasPrice: 1000000000,
+      skipDryRun: true,
+    },
     coverage: {
       host: "localhost",
       network_id: "*",
